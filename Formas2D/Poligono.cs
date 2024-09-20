@@ -1,6 +1,6 @@
 ﻿namespace Formas2D
 {
-    public class Poligono : Elipse
+    public abstract class Poligono : Forma2D
     {
         protected int numeroDeLados;
 

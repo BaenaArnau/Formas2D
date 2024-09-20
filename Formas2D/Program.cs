@@ -16,6 +16,7 @@ namespace Formas2D
             Cuadrado cuadrado = new Cuadrado(6);
             Rombo rombo = new Rombo(4,8);
             Triangulo triangulo = new Triangulo(6,6,30);
+            Diagrama diagrama = new Diagrama();
 
             Console.WriteLine($@"
 {circulo.ToString()}
@@ -46,6 +47,12 @@ Perimetro del triangulo: {triangulo.Perimetro()}");
 {elipse.ToString()}
 Area del elipse: {elipse.Area()}
 Perimetro del elipse: {elipse.Perimetro()}");
+
+            Console.WriteLine($@"
+Numero de figuras {diagrama.Figuras.Count}
+{diagrama.ToString()}
+Area total de todas las figuras: {diagrama.Area()}
+Perimetro total de todas las figuras: {diagrama.Perimetro()}");
             Console.ReadKey();
         }
     }

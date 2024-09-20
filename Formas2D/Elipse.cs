@@ -17,12 +17,12 @@ namespace Formas2D
             this.radio2 = radio2;
         }
 
-        public float Area()
+        public override float Area()
         {
             return radio1 * radio2 * (float)Math.PI; 
         }
 
-        public float Perimetro()
+        public override float Perimetro()
         {
             float pi = (float)Math.PI;
             float term1 = 3 * (radio1 + radio2);

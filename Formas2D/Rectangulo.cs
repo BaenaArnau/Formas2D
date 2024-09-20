@@ -15,12 +15,12 @@
             this.altura = altura;
         }
 
-        public float Area()
+        public override float Area()
         {
             return suelo * altura;
         }
 
-        public float Perimetro()
+        public override float Perimetro()
         {
             return suelo + suelo + altura + altura;
         }

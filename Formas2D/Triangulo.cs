@@ -19,12 +19,12 @@ namespace Formas2D
             this.angulo = angulo;
         }
 
-        public float Area()
+        public override float Area()
         {
             return (suelo * altura) / 2;
         }
 
-        public float Perimetro()
+        public override float Perimetro()
         {
             float anguloEnRadianes = (float)(Math.PI / 180) * angulo;
             float lado1 = altura / (float)Math.Sin(anguloEnRadianes);

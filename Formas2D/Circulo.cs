@@ -13,12 +13,12 @@ namespace Formas2D
         {
         }
 
-        public float Area()
+        public override float Area()
         {
             return (float)Math.PI * radio1 * radio1;
         }
 
-        public float Perimetro()
+        public override float Perimetro()
         {
             return 2 * (float)Math.PI * radio1;
         }

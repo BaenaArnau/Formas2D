@@ -18,12 +18,12 @@ namespace Formas2D
             this.diagonal2 = diagonal2;
         }
 
-        public float Area()
+        public override float Area()
         {
             return (diagonal2 * diagonal1) / 2;
         }
 
-        public float Perimetro()
+        public override float Perimetro()
         {
             float lado = (float)Math.Sqrt(Math.Pow(diagonal1 / 2, 2) + Math.Pow(diagonal2 / 2, 2));
             return lado + lado + lado + lado;
