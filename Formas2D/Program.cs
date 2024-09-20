@@ -13,8 +13,8 @@ namespace Formas2D
             Diagrama diagrama = new Diagrama();
 
             Console.WriteLine($@"
-Numero de figuras {diagrama.Figuras.Count}
 {diagrama.ToString()}
+Numero de figuras {diagrama.Figuras.Count}
 Area total de todas las figuras: {diagrama.Area()}
 Perimetro total de todas las figuras: {diagrama.Perimetro()}");
             Console.ReadKey();
