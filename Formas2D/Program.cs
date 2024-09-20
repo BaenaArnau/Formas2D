@@ -15,7 +15,7 @@ namespace Formas2D
             Rectangulo rectangulo = new Rectangulo(20,6);
             Cuadrado cuadrado = new Cuadrado(6);
             Rombo rombo = new Rombo(4,8);
-            Triangulo triangulo = new Triangulo(6,6);
+            Triangulo triangulo = new Triangulo(6,6,30);
 
             Console.WriteLine($@"
 {circulo.ToString()}
