@@ -5,13 +5,13 @@ namespace Formas2D
 {
     public class Diagrama
     {
-        List<Forma2D> figuras;
+        protected List<Forma2D> figuras;
 
         public Diagrama()
         {
             figuras = new List<Forma2D>();
             Random r = new Random();
-            int numFiguras = r.Next(1,100);
+            int numFiguras = r.Next(1, 10000);
 
             Rellenar(numFiguras, r);
         }
@@ -48,9 +48,7 @@ namespace Formas2D
         {
             float resultado = 0;
             foreach (var figura in figuras)
-            {
                 resultado += figura.Area();
-            }
             return resultado;
         }
 
@@ -58,9 +56,7 @@ namespace Formas2D
         {
             float resultado = 0;
             foreach (var figura in figuras)
-            {
                 resultado += figura.Perimetro();
-            }
             return resultado;
         }
 
@@ -70,9 +66,7 @@ namespace Formas2D
         {
             string salida = "Lista de figuras: \n";
             foreach (var figura in figuras)
-            {
                 salida += ("- " + figura.ToString() + "\n");
-            }
 
             return salida;
         }
